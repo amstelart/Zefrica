@@ -6,8 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding-left: 33px;
-  padding-right: 33px;
+  @include media-breakpoint-up(sm) {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 
   .navbar-brand {
     position: relative;
@@ -25,6 +27,33 @@
       background: svg-load('../img/zebra-icon.svg', fill=#383838);
       top: -15px;
       left: -55px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+
+      margin-top: 1.5rem;
+      color: #626262;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+        margin-left: 3rem;
+        display: flex;
+        align-items: center;
+      }
+
+      @include media-breakpoint-down(md) {
+        &:last-child {
+          margin-bottom: 1.5rem;
+        }
+
+        .btn-call {
+          padding: 0.7rem 1.3rem;
+          width: 100%;
+          max-width: 270px;
+        }
+      }
     }
   }
 

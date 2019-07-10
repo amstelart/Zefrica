@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js  page" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -16,26 +16,28 @@
 
       @@include('blocks/page-header/page-header.html')
 
+      <!-- Intro -->
       <section class="intro">
         <div class="container">
-          <div class="row h-100">
-            <div class="intro__inner col-lg-8 py-5">
+          <div class="row">
+            <div class="intro__inner col-md-7 col-lg-8 py-4 py-sm-5">
               <div class="intro__info">
                 <h1 class="intro__title text-uppercase">Натуральные шкуры зебры</h1>
-                <p class="intro__text mb-5">Без наценок , напрямую от 5-и крупнейших производителей Африки</p>
-                <p class="intro__lead-text mb-4">Скидка 50% и бесплатная доставка по России</p>
+                <p class="intro__text mb-3 mb-sm-5">Без наценок , напрямую от 5-и крупнейших производителей Африки</p>
+                <p class="intro__lead-text mb-3 mb-sm-4">Скидка 50% и бесплатная доставка по России</p>
                 <div class="intro__countdown mb-4">
                   <p>До конца акции осталось:</p>
                   <div id="zefricaTimer"></div>
                 </div>
-                <p><a href="#" class="btn btn-primary">Купить со скидкой</a></p>
+                <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#buyModal">Купить со скидкой</a></p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="products py-7">
+      <!-- Products -->
+      <section class="products py-4 py-md-7">
         <div class="container">
           <div class="container-narrow">
             <div class="heading">
@@ -44,26 +46,28 @@
             <div class="product-card mb-5">
               <div class="product-card__inner d-flex">
                 <div class="product-card__media">
-                  <div class="counter-out"></div>
-                  <div class="product-carousel owl-carousel owl-theme" data-slider-id="1">
-                    <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
-                    </a>
+                  <div class="product-carousel-wrap">
+                    <div class="counter-out"></div>
+                    <div class="product-carousel owl-carousel owl-theme" data-slider-id="1">
+                      <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
+                      </a>
+                    </div>
                   </div>
 
                   <div class="owl-thumbs product-thumbs" data-slider-id="1">
@@ -98,7 +102,7 @@
                     <span class="main-price">90 000 ₽</span>
                   </div>
                   <div class="product-card__action">
-                    <a href="#" class="btn btn-primary d-block mb-2">Купить со скидкой</a>
+                    <a href="#" class="btn btn-primary d-block mb-2" data-toggle="modal" data-target="#buyModal">Купить со скидкой</a>
                     <a href="#" class="btn btn-outline-primary d-block">Задать вопрос</a>
                   </div>
                 </div>
@@ -107,26 +111,28 @@
             <div class="product-card mb-5">
               <div class="product-card__inner d-flex">
                 <div class="product-card__media">
-                  <div class="counter-out"></div>
-                  <div class="product-carousel owl-carousel owl-theme" data-slider-id="2">
-                    <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
-                    </a>
+                  <div class="product-carousel-wrap">
+                    <div class="counter-out"></div>
+                    <div class="product-carousel owl-carousel owl-theme" data-slider-id="2">
+                      <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
+                      </a>
+                    </div>
                   </div>
                   <div class="owl-thumbs product-thumbs" data-slider-id="2">
                     <button class="owl-thumb-item"><img src="img/image-slide-01.jpg" alt=""></button>
@@ -160,7 +166,7 @@
                     <span class="main-price">90 000 ₽</span>
                   </div>
                   <div class="product-card__action">
-                    <a href="#" class="btn btn-primary d-block mb-2">Купить со скидкой</a>
+                    <a href="#" class="btn btn-primary d-block mb-2" data-toggle="modal" data-target="#buyModal">Купить со скидкой</a>
                     <a href="#" class="btn btn-outline-primary d-block">Задать вопрос</a>
                   </div>
                 </div>
@@ -169,25 +175,28 @@
             <div class="product-card mb-5">
               <div class="product-card__inner d-flex">
                 <div class="product-card__media">
-                  <div class="product-carousel owl-carousel owl-theme" data-slider-id="3">
-                    <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
-                    </a>
-                    <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
-                      <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
-                    </a>
+                  <div class="product-carousel-wrap">
+                    <div class="counter-out"></div>
+                    <div class="product-carousel owl-carousel owl-theme" data-slider-id="3">
+                      <a href="img/image-slide-01.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-01.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-02.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-02.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-03.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-03.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-04.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-04.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-05.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-05.jpg" alt="">
+                      </a>
+                      <a href="img/image-slide-06.jpg" data-fancybox class="image-slide">
+                        <img class="img-fluid" src="img/image-slide-06.jpg" alt="">
+                      </a>
+                    </div>
                   </div>
 
                   <div class="owl-thumbs product-thumbs" data-slider-id="3">
@@ -223,7 +232,7 @@
                     <span class="main-price">90 000 ₽</span>
                   </div>
                   <div class="product-card__action">
-                    <a href="#" class="btn btn-primary d-block mb-2">Купить со скидкой</a>
+                    <a href="#" class="btn btn-primary d-block mb-2" data-toggle="modal" data-target="#buyModal">Купить со скидкой</a>
                     <a href="#" class="btn btn-outline-primary d-block">Задать вопрос</a>
                   </div>
                 </div>
@@ -233,38 +242,40 @@
         </div>
       </section>
 
-      <section class="faq parallax bg-overlay-img py-7" data-parallax-bg-image="img/faq-bg.jpg">
+      <!-- Faq -->
+      <section class="faq container-fluid parallax bg-overlay-img py-4 py-md-7" data-parallax-bg-image="img/faq-bg.jpg">
         <div class="heading">
           <h2 class="h1 text-center text-uppercase">Возможно у вас возникли вопросы <span class="decor"></span></h2>
-          <div class="faq-list">
-            <div class="faq-list__item question first">
-              <span>Как выбрать шкуру зебры?</span>
-            </div>
-            <div class="faq-list__item question second">
-              <span>Какая зебра подойдет именно Вам?</span>
-            </div>
-            <form action="" class="faq-list__item form">
-              <div class="input-group">
-                <input type="text" class="form-control phone-mask" placeholder="Ваш телефон" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2">Получить консультацию</button>
-                </div>
+        </div>
+        <div class="faq-list">
+          <div class="faq-list__item question first">
+            <span>Как выбрать шкуру зебры?</span>
+          </div>
+          <div class="faq-list__item question second">
+            <span>Какая зебра подойдет именно Вам?</span>
+          </div>
+          <form action="" class="faq-list__item form">
+            <div class="input-group">
+              <input type="text" class="form-control phone-mask" placeholder="Ваш телефон" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="button-addon2">Получить консультацию</button>
               </div>
-            </form>
-            <div class="faq-list__item question third">
-              <span>Где находится производство?</span>
             </div>
-            <div class="faq-list__item question fourth">
-              <span>В чем разница между шкурами классов A, B или С?</span>
-            </div>
+          </form>
+          <div class="faq-list__item question third">
+            <span>Где находится производство?</span>
+          </div>
+          <div class="faq-list__item question fourth">
+            <span>В чем разница между шкурами классов A, B или С?</span>
           </div>
         </div>
       </section>
 
-      <section class="delivery py-7">
+      <!-- Delivery -->
+      <section class="delivery py-4 pt-md-9">
         <div class="container">
           <div class="heading">
-            <h2 class="h1 text-center text-uppercase">Доставка <span class="decor"></span></h2>
+            <h2 class="h1 mb-md-7 text-center text-uppercase">Доставка <span class="decor"></span></h2>
           </div>
           <div class="card delivery-card mb-3">
             <img src="img/delivery-card-img.jpg" class="card-img-top" alt="...">
@@ -287,7 +298,8 @@
         </div>
       </section>
 
-      <section class="about py-7">
+      <!-- About -->
+      <section class="about py-4 py-md-7">
         <div class="container">
           <div class="heading">
             <h2 class="h1 text-center text-uppercase">О компании <span class="decor"></span></h2>
@@ -307,7 +319,8 @@
         </div>
       </section>
 
-      <section class="reviews py-7">
+      <!-- Reviews -->
+      <section class="reviews py-4 py-md-7">
         <div class="container">
           <div class="heading">
             <h2 class="h1 text-center text-uppercase">Отзывы <span class="decor"></span></h2>
@@ -350,12 +363,25 @@
                   <p>Хотели ковер, случайно нашли компанию Zefrica. Оказалось, что хороший ковер и натуральная шкура зебры стоят практически одинаково. Сделали выбор в пользу эксклюзива ввиде шкуры зебры. К фирме, доставке никаких замечаний нет: все оперативно и качественно. Доставили за 2 дня службой СДЭК бесплатно.</p>
                 </div>
               </div>
+              <div class="reviews-card">
+                <div class="reviews-card__img-wrap">
+                  <img class="reviews-card__img" src="img/reviews-card-img-01.jpg" alt="">
+                  <div class="reviews-card__header">
+                    <h5 class="reviews-card__title">Мочалова Людмила</h5>
+                    <p>Новороссийск</p>
+                  </div>
+                </div>
+                <div class="reviews-card__body">
+                  <p>Хотели ковер, случайно нашли компанию Zefrica. Оказалось, что хороший ковер и натуральная шкура зебры стоят практически одинаково. Сделали выбор в пользу эксклюзива ввиде шкуры зебры. К фирме, доставке никаких замечаний нет: все оперативно и качественно. Доставили за 2 дня службой СДЭК бесплатно.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="feedback parallax bg-overlay-img py-7" data-parallax-bg-image="img/feedback-bg.jpg">
+      <!-- Feedback -->
+      <section class="feedback parallax bg-overlay-img py-4 py-md-7" data-parallax-bg-image="img/feedback-bg.jpg">
         <div class="container">
           <div class="heading">
             <h2 class="h1 text-center text-uppercase">Нужна консультация?</h2>
@@ -379,34 +405,11 @@
                 </div>
               </div>
             </form>
-            <p class="form-info text-center">Нажимая на кнопку Получить консультацию вы соглашаетесь с <a href="#">условиями обработки данных</a></p>
+            <p class="form-info text-center">Нажимая на кнопку Получить консультацию вы соглашаетесь с <a class="text-nowrap" href="#">условиями обработки данных</a></p>
           </div>
           <h3 class="h3 text-uppercase text-center">Или просто позвоните <a class="text-nowrap" href="tel:+79788947313">+7 978 894 73 13</a></h2>
         </div>
       </section>
-
-      <!-- <main class="container" role="main">
-
-        <h1>NTH start project</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <h2>NTH start project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <h3>NTH start project</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <h4>NTH start project</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <h5>NTH start project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <h6>NTH start project</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium, dolorum, blanditiis quis error numquam voluptas ut excepturi doloribus id.</p>
-
-      </main> -->
 
     </div>
 
@@ -414,6 +417,37 @@
       @@include('blocks/page-footer/page-footer.html')
     </div>
 
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="exampleModalLongTitle">Купить со скидкой</h2>
+          <p class="modal-sub-title">Наш менеджер свяжется с Вами в ближайшее время для уточнения деталей заказа!</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close-icon"></use></svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4 class="text-center font-weight-normal">Zebra Burchellii С #337</h4>
+          <h4 class="text-center mb-4">90 000 ₽</h4>
+          <form action="" class="form form-modal">
+            <div class="form-group mb-3">
+              <input type="text" class="form-control phone-mask" id="" placeholder="Ваш телефон">
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" class="form-control" id="" placeholder="Ваш E-mail">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Купить со скидкой</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="text-center">Нажимая на кнопку Получить консультацию вы соглашаетесь с <a href="#">условиями обработки данных</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   @@include('_include/page_bottom.html')

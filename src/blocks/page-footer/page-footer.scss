@@ -6,9 +6,30 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &__contacts {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+    }
+  }
+
   .adress-item {
     p {
       color: #757575;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -32,6 +53,10 @@
 
   .copiright {
     color: #757575;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+    }
   }
 
 }
