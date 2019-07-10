@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <title>Zefrica</title>
   <meta name="description" content="">
-  @@include('_include/page_head.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9cc6578c9d.js"></script>
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
 </head>
 
 <body>
@@ -14,7 +23,43 @@
 
     <div class="page__content">
 
-      @@include('blocks/page-header/page-header.html')
+      <header class="page-header navbar fixed-top navbar-dark bg-dark" role="banner">
+        <a class="navbar-brand mr-auto" href="#">
+          <img src="img/logo.png" alt="Zefrica">
+        </a>
+        <span class="navbar-text">
+          Работаем без выходных
+        </span>
+        <div class="navbar-text">
+          <a class="phone-link" href="tel:+79788947313" class="navbar-text">
+            <svg class="phone-link__icon" width="18" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone-icon"></use></svg>
+            +7 978 894 73 13
+          </a>
+        </div>
+        <div class="navbar-text">
+          <a href="#" class="btn btn-call btn-sm btn-outline-light">Заказать звонок</a>
+        </div>
+        <span class="navbar-text">
+          <ul class="social">
+            <li class="social__link-wrap social__link-wrap--whatsapp" title="Whatsapp">
+              <a class="social__link" href="#">
+                <svg width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp-icon"></use></svg>
+              </a>
+            </li>
+            <li class="social__link-wrap social__link-wrap--viber" title="Viber">
+              <a class="social__link" href="#">
+                <svg width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber-icon"></use></svg>
+              </a>
+            </li>
+            <li class="social__link-wrap social__link-wrap--telegram" title="Telegram">
+              <a class="social__link" href="#">
+                <svg width="33" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram-icon"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </span>
+      </header>
+
 
       <section class="intro">
         <div class="container">
@@ -411,11 +456,58 @@
     </div>
 
     <div class="page__footer-wrapper">
-      @@include('blocks/page-footer/page-footer.html')
+
+      <footer class="page-footer py-5" role="contentinfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4">
+              <div class="adress-item mb-4">
+                <h6 class="mb-3">ОФИС В ЮАР - Кейптаун</h6>
+                <p>201 Bree St & Buiten Street, CBD, Cape Town, 8013, Южная Африка</p>
+              </div>
+              <div class="adress-item">
+                <h6 class="mb-3">ОФИС В РОССИИ - Севастополь</h6>
+                <p>проспект Генерала Острякова, 64. оф 12 а. Севастополь.</p>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 d-flex text-right flex-column">
+              <div class="page-footer__info">
+                <h6>Будем рады видеть Вас среди наших клиентов. Приходите, приезжайте, звоните, пишите</h6>
+                <div class="d-flex align-items-center justify-content-end">
+                  <a class="phone-link my-3 text-nowrap" href="tel:+79788947313">
+                    <svg class="phone-link__icon" width="18" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone-icon"></use></svg>
+                    +7 978 894 73 13
+                  </a>
+                  <a href="#" class="btn btn-call btn-sm btn-outline-light my-3 ml-5">Заказать звонок</a>
+                  <ul class="social social--gray my-3 ml-4">
+                    <li class="social__link-wrap social__link-wrap--whatsapp" title="Whatsapp">
+                      <a class="social__link" href="#">
+                        <svg width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp-icon"></use></svg>
+                      </a>
+                    </li>
+                    <li class="social__link-wrap social__link-wrap--viber" title="Viber">
+                      <a class="social__link" href="#">
+                        <svg width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber-icon"></use></svg>
+                      </a>
+                    </li>
+                    <li class="social__link-wrap social__link-wrap--telegram" title="Telegram">
+                      <a class="social__link" href="#">
+                        <svg width="33" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram-icon"></use></svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="copiright mt-auto">При использовании материалов ссылка на сайт обязательна ©2016 – 2019, фирма Zefrica</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     </div>
 
   </div>
+  <script src="js/script.min.js"></script>
 
-  @@include('_include/page_bottom.html')
 </body>
 </html>
