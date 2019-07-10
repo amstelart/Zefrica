@@ -5,4 +5,30 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding-left: 33px;
+  padding-right: 33px;
+
+  .navbar-brand {
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 97px;
+      height: 92px;
+      background: svg-load('../img/zebra-icon.svg', fill=#383838);
+      top: -15px;
+      left: -55px;
+    }
+  }
+
+  .navbar-text {
+    margin-left: 3rem;
+  }
 }
