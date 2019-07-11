@@ -6,6 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  overflow: hidden;
+
   @include media-breakpoint-up(sm) {
     padding-left: 33px;
     padding-right: 33px;
@@ -31,10 +33,11 @@
   }
 
   .navbar-nav {
+
     .nav-item {
 
       margin-top: 1.5rem;
-      color: #626262;
+      color: #a0a0a0;
 
       @include media-breakpoint-up(lg) {
         margin-top: 0;
@@ -59,5 +62,38 @@
 
   .navbar-text {
     margin-left: 3rem;
+  }
+
+  .btn-phone {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 15px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-right: 6px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-grow: 1;
+    }
+
+    @media (max-width: 359px) {
+      font-size: 12px;
+      flex-grow: 0;
+      margin: 0 10px;
+
+      svg {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+      }
+    }
   }
 }

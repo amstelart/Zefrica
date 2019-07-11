@@ -847,9 +847,17 @@ img {
         @include media-breakpoint-down(sm) {
           flex-direction: column;
 
-          & > .form-control,
+          .form-control,
           .btn {
             width: 100%;
+          }
+
+          .form-control {
+            margin-bottom: 15px;
+          }
+
+          .input-group-append {
+            margin: 0;
           }
         }
       }
@@ -1211,5 +1219,13 @@ img {
 
   .btn {
     width: 100%;
+  }
+}
+
+.form-control {
+  letter-spacing: 0.06em;
+
+  &::placeholder {
+    letter-spacing: 0;
   }
 }
