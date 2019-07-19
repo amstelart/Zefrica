@@ -118,7 +118,9 @@
   min-height: 100%;
 
   body {
-    padding-top: 56px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 66px;
+    }
   }
 
   &__inner {
@@ -498,16 +500,16 @@ img {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(38, 38, 38, 0.7);
-      background-image: svg-load('../blocks/sprite-svg/svg/loupe-icon.svg', fill=#fff);
-      background-repeat: no-repeat;
-      background-position: center;
+      background-color: rgba(38, 38, 38, 0.4);
+      // background-image: svg-load('../blocks/sprite-svg/svg/loupe-icon.svg', fill=#fff);
+      // background-repeat: no-repeat;
+      // background-position: center;
       opacity: 0;
       transition: all 0.4s;
 
-      @include media-breakpoint-down(md) {
-        background-size: 20px 20px;
-      }
+      // @include media-breakpoint-down(md) {
+      //   background-size: 20px 20px;
+      // }
     }
 
     &:focus {
@@ -609,6 +611,7 @@ img {
       border: 2px solid #858585;
       color: #fff;
       text-align: center;
+      min-width: 70%;
 
       span {
         color: $primary;
@@ -623,6 +626,10 @@ img {
   }
 
   &__name {
+    font-weight: $font-weight-normal;
+  }
+
+  &__size {
     font-weight: $font-weight-normal;
   }
 
@@ -837,6 +844,10 @@ img {
     &.form {
 
       padding: 20px 0;
+
+      @include media-breakpoint-down(md) {
+        order: 20;
+      }
 
 
       @include media-breakpoint-up(lg) {

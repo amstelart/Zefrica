@@ -26,21 +26,16 @@
     padding: 5px;
     background-color: transparent;
 
-    // #{$block-name}__link-wrap--you & {
-    //   background-color: #444;
-    // }
-
     svg {
       display: block;
-      // width: 30px;
-      // height: 30px;
-      fill: #fff;
+      fill: $primary;
+      transition: fill 0.3s;
     }
 
     &:hover {
 
       svg {
-        fill: $primary;
+        fill: #fff;
       }
     }
   }
@@ -50,7 +45,7 @@
     #{$block-name}__link {
 
       svg {
-        fill: #c5c5c5;
+        fill: $primary;
       }
 
       &:hover {

@@ -7,14 +7,16 @@
   $block-name:                &; // #{$block-name}__element
 
   overflow: hidden;
+  display: flex;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     padding-left: 33px;
     padding-right: 33px;
   }
 
   .navbar-brand {
     position: relative;
+    margin-left: 15px;
 
     img {
       position: relative;
@@ -28,28 +30,53 @@
       height: 92px;
       background: svg-load('../img/zebra-icon.svg', fill=#383838);
       top: -15px;
-      left: -55px;
+      left: -35px;
+    }
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #262626;
+
+    @include media-breakpoint-down(sm) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 8px 15px;
+      width: 100%;
+      z-index: 100;
+      overflow: hidden;
     }
   }
 
   .navbar-nav {
 
-    .nav-item {
+    flex-direction: row;
+    align-items: center;
 
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-item {
       margin-top: 1.5rem;
       color: #a0a0a0;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         margin-top: 0;
-        margin-left: 3rem;
+        margin-left: 1.7rem;
         display: flex;
         align-items: center;
       }
 
       @include media-breakpoint-down(md) {
-        &:last-child {
-          margin-bottom: 1.5rem;
-        }
+        // &:last-child {
+        //   margin-bottom: 1.5rem;
+        // }
 
         .btn-call {
           padding: 0.7rem 1.3rem;
@@ -70,7 +97,7 @@
     font-size: 16px;
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 0 15px;
+    margin-left: 15px;
     display: flex;
     height: 40px;
     align-items: center;
